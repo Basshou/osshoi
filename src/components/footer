@@ -1,0 +1,22 @@
+<footer>
+        <hr/>
+        <span>  
+                <a href="https://github.com/Basshou/osshoi">Source</a> <a href="mailto:contact@osshoi.com">Contact</a>
+        </span>
+</footer>
+<style>
+        footer {
+                text-align: center;
+                padding: 5x;
+        }
+	      hr {
+                border: none;
+                height: 1px;
+                opacity: 0.2;
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, var(--clr-text) 49.48%, rgba(255, 255, 255, 0.00) 100%);
+	      }
+        span {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        }
