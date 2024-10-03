@@ -15,6 +15,11 @@
             justify-content: center;
             align-items: center;
         }
+        span {
+            display: flex;
+	    flex-direction: row;
+            justify-content: space-between;
+        }
 
         .image-container {
             display: flex;
@@ -27,10 +32,29 @@
             height: 50px;
             bottom: 0;
         }
-        span {
-		    display: flex;
-		    flex-direction: row;
-		    justify-content: space-between;
+
+        .link-container {
+            position: absolute;
+            width: 100%;
+        }
+
+        .blog {
+            position: absolute;
+            left: 25%;
+            bottom: 0;
+        }
+
+        .source {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+
+        .clips {
+            position: absolute;
+            right: 25%;
+            bottom: 0;
         }
 
         hr {
@@ -61,11 +85,13 @@
 </head>
 <body>
     <h1>Batten</h1>
+    <span> 
     <div class="image-container">
         <img src="https://static.wikia.nocookie.net/jpop/images/7/76/BATTEN_GIRLS_YOIMIYA_Kiyama_Ai.jpg" alt="Ai Kiyama"> 
         <img src="https://static.wikia.nocookie.net/jpop/images/a/ac/BATTEN_GIRLS_YOIMIYA_Ueda_Riko.jpg" alt="Ueda Riko"> 
         <img src="https://static.wikia.nocookie.net/jpop/images/5/5c/BATTEN_GIRLS_YOIMIYA_Seta_Sakura.jpg" alt="Seta Sakura">
         <img src="https://static.wikia.nocookie.net/jpop/images/0/0f/BATTEN_GIRLS_YOIMIYA_Yanagi_Miyu.jpg" alt="Yanagi Miyu">
+    </span>
     </div>
     <div class="profile-text">
         <iframe width="420" height="315" src="https://www.youtube.com/embed/eYJGC3o1zLs" frameborder="0" allowfullscreen></iframe>
@@ -80,9 +106,13 @@
     <footer>
         <hr/>
         <div class="link-container">
-            <span>
+            <span class="blog">
                 <a href="https://osshoi.com/blog">blog</a>
+            </span>
+            <span class="source">
                 <a href="https://github.com/Basshou/osshoi">source</a>
+            </span>
+            <span class="clips">
                 <a href="https://osshoi.com/clips">clips</a>
             </span>
         </div>
