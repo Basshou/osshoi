@@ -96,15 +96,24 @@
         </div>
     </footer>
 
-   <script>
-    // Define your background images
-    const images = [
-        'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten1.png',
-        'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png'
-    ];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    const cacheBuster = new Date().getTime();
-    document.body.style.backgroundImage = `url('${randomImage}?cb=${cacheBuster}')`;
-</script>
+    <script>
+        const desktopImages = [
+            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten1.png',
+            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png'
+        ];
+        const mobileImages = [
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Haruno_Kiina.webp',
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Ueda_Riko.webp',
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Yanagi_Miyu.webp',
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Seta_Sakura.webp',
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Kiyama_Ai.webp',
+            'https://github.com/Basshou/osshoi/raw/refs/heads/main/background/BATTEN_GIRLS_YOIMIYA_Aoi_Rirua.webp'
+        ];
+        const isMobile = window.innerWidth <= 600;
+        const images = isMobile ? mobileImages : desktopImages;
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        const cacheBuster = new Date().getTime();
+        document.body.style.backgroundImage = `url('${randomImage}?cb=${cacheBuster}')`;
+    </script>
 </body>
 </html>
