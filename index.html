@@ -7,7 +7,6 @@
     <meta name="description" content="Me when Batten the Shoujo">
     <style>
         body {
-            background-image: url('https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -96,5 +95,14 @@
             <a href="https://osshoi.com/clips">clips</a>
         </div>
     </footer>
+
+    <script>
+        const images = [
+            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png', // First image
+            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/collage.png' // Replace with your second image link
+        ];
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        document.body.style.backgroundImage = `url('${randomImage}')`;
+    </script>
 </body>
 </html>
