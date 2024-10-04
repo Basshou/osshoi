@@ -96,13 +96,15 @@
         </div>
     </footer>
 
-    <script>
-        const images = [
-            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png', // First image
-            'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten1.png' // Replace with your second image link
-        ];
-        const randomImage = images[Math.floor(Math.random() * images.length)];
-        document.body.style.backgroundImage = `url('${randomImage}')`;
-    </script>
+   <script>
+    // Define your background images
+    const images = [
+        'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten1.png',
+        'https://raw.githubusercontent.com/Basshou/osshoi/refs/heads/main/background/batten2.png'
+    ];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    const cacheBuster = new Date().getTime();
+    document.body.style.backgroundImage = `url('${randomImage}?cb=${cacheBuster}')`;
+</script>
 </body>
 </html>
