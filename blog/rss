@@ -1,7 +1,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <link href="https://osshoi.com/blog/rss" rel="self" type="application/atom+xml"/>
 <link href="https://osshoi.com/" rel="alternate" type="text/html"/>
-<id>https://artemis.sh/feed.xml</id>
+<id>https://osshoi.com/blog/rss</id>
 <title type="html">osshoi.com</title>
 <subtitle>blog</subtitle>
 <author>
