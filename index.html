@@ -20,7 +20,10 @@
             text-align: center;
             color: white;
         }
-
+.flex-container {
+    display: flex;
+    gap: var(--spacing-medium);
+}
         .image-container {
             display: flex;
             flex-wrap: wrap;
@@ -35,20 +38,28 @@
             height: 225px;
         }
 
-        .link-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
+.link-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 16px;
+    background-color: #333;
+}
 
-        .link-container a {
-            text-decoration: none;
-            color: White;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+.link-container a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
         @media (max-width: 600px) {
             iframe {
                 width: 45%;
